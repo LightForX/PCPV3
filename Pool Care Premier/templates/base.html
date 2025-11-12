@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>{% block title %}Pool Care Premier - Lithia, Bloomingdale & Riverview Pool Cleaning | Free Equipment Check{% endblock %}</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='10' y='35' width='80' height='50' rx='8' fill='%233b82f6' stroke='%232563eb' stroke-width='3'/%3E%3Cellipse cx='50' cy='60' rx='30' ry='15' fill='%2360a5fa' opacity='0.6'/%3E%3Cpath d='M20 45 Q30 40 40 45 T60 45 T80 45' fill='none' stroke='%23ffffff' stroke-width='2' opacity='0.7'/%3E%3Cpath d='M25 55 Q32 52 38 55 T50 55' fill='none' stroke='%23ffffff' stroke-width='1.5' opacity='0.5'/%3E%3Ccircle cx='30' cy='25' r='8' fill='%23fbbf24' stroke='%23f59e0b' stroke-width='2'/%3E%3C/svg%3E">
+    <meta name="description" content="Tampa Bay's #1 rated pool cleaning service in Lithia, Bloomingdale & Riverview. Weekly maintenance, chemical balancing & equipment inspection. First cleaning FREE! Serving Hillsborough County. Call (813) 520-1198.">
+    <meta name="keywords" content="pool cleaning Lithia FL, pool service Bloomingdale, pool maintenance Riverview, pool cleaning Lithia, pool service Riverview FL, Bloomingdale pool cleaning, Lithia pool maintenance, Riverview pool service, weekly pool service Lithia, pool cleaner Bloomingdale FL, pool care Riverview, swimming pool maintenance Lithia, pool cleaner near me Riverview, best pool service Bloomingdale, affordable pool cleaning Lithia, Hillsborough County pool service">
+    <meta name="author" content="Pool Care Premier">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://www.poolcarepremier.com/">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pool Care Premier - #1 Pool Service in Lithia, Bloomingdale & Riverview">
+    <meta property="og:description" content="Professional weekly pool maintenance in Lithia, Bloomingdale & Riverview FL. Chemical balancing, filter cleaning & equipment inspection. First cleaning FREE! Call (813) 520-1198">
+    <meta property="og:url" content="https://www.poolcarepremier.com">
+    <meta property="og:site_name" content="Pool Care Premier">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pool Care Premier - Lithia, Bloomingdale & Riverview Pool Service">
+    <meta name="twitter:description" content="Professional pool cleaning & maintenance in Lithia, Bloomingdale & Riverview FL. First cleaning FREE!">
+    
+    <!-- Geographic Tags -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Lithia, Bloomingdale, Riverview, Florida">
+    <meta name="geo.position" content="27.8625;-82.2073">
+    <meta name="ICBM" content="27.8625, -82.2073">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" as="style">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Pool Care Premier",
+      "description": "Professional pool cleaning and maintenance service in Lithia, Bloomingdale, and Riverview FL. Weekly service, chemical balancing, filter cleaning, and equipment inspection.",
+      "image": "https://www.poolcarepremier.com/static/logo.png",
+      "@id": "https://www.poolcarepremier.com",
+      "url": "https://www.poolcarepremier.com",
+      "telephone": "(813) 520-1198",
+      "email": "poolcarepremier@gmail.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lithia",
+        "addressRegion": "FL",
+        "postalCode": "33547",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 27.8625,
+        "longitude": -82.2073
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Lithia",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "FL",
+            "postalCode": "33547"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Bloomingdale",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "FL",
+            "postalCode": "33596"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Riverview",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "FL",
+            "postalCode": "33578"
+          }
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Hillsborough County"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1",
+        "reviewCount": "200"
+      },
+      "offers": {
+        "@type": "Offer",
+        "description": "First Pool Cleaning FREE - No Credit Card Required",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Pool Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Weekly Pool Cleaning",
+              "description": "Skimming, vacuuming, brushing walls and steps"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Chemical Balancing",
+              "description": "pH, chlorine, alkalinity testing and adjustment"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Filter Maintenance",
+              "description": "Filter cleaning and backwashing"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Equipment Inspection",
+              "description": "Pump, heater, and equipment inspection"
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.facebook.com/poolcarepremier",
+        "https://www.instagram.com/poolcarepremier",
+        "https://www.twitter.com/poolcarepremier"
+      ]
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.poolcarepremier.com"
+      }]
+    }
+    </script>
+    
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <!-- Simple Header with CTA -->
+    <header class="header">
+        <div class="header-container">
+            <a href="{{ url_for('home') }}" class="logo">
+                <i class="fas fa-swimming-pool"></i>
+                Pool Care Premier
+            </a>
+            <nav class="nav-menu">
+                <a href="{{ url_for('home') }}#services">Services</a>
+                <a href="{{ url_for('home') }}#contact-form">Contact</a>
+                <a href="{{ url_for('referral') }}">Referral Program</a>
+                <a href="tel:8135201198" class="phone-link">
+                    <i class="fas fa-phone"></i> (813) 520-1198
+                </a>
+            </nav>
+            <a href="{{ url_for('home') }}#contact-form" class="header-cta">
+                <i class="fas fa-gift"></i> Free Equipment Check
+            </a>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('home') }}#services">Services</a>
+        <a href="{{ url_for('home') }}#contact-form">Contact</a>
+        <a href="{{ url_for('referral') }}">Referral Program</a>
+        <a href="tel:8135201198">
+            <i class="fas fa-phone"></i> (813) 520-1198
+        </a>
+        <a href="{{ url_for('home') }}#contact-form" class="mobile-cta">
+            <i class="fas fa-gift"></i> Free Equipment Check
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Simple Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>
+                        <i class="fas fa-swimming-pool"></i>
+                        Pool Care Premier
+                    </h3>
+                    <p>Professional pool cleaning and maintenance services in Lithia, Bloomingdale, Riverview and Hillsborough County.</p>
+                    <div class="footer-contact">
+                        <a href="tel:8135201198">
+                            <i class="fas fa-phone"></i> (813) 520-1198
+                        </a>
+                        <a href="mailto:poolcarepremier@gmail.com">
+                            <i class="fas fa-envelope"></i> poolcarepremier@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="{{ url_for('home') }}">Home</a>
+                    <a href="{{ url_for('home') }}#services">What's Included</a>
+                    <a href="{{ url_for('home') }}#contact-form">Get Free Service</a>
+                    <a href="{{ url_for('referral') }}">Referral Program</a>
+                    <a href="tel:8135201198">Call Us</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Service Areas</h4>
+                    <p>Lithia, Bloomingdale, Riverview, and Hillsborough County</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/poolcarepremier" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/poolcarepremier" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/poolcarepremier" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pool Care Premier. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA Button -->
+    <a href="{{ url_for('home') }}#contact-form" class="floating-cta" id="floatingCTA">
+        <i class="fas fa-gift"></i>
+        <span>Free Check</span>
+    </a>
+
+    <!-- Chat Bubble -->
+    <div class="chat-bubble" id="chatBubble">
+        <div class="chat-icon" id="chatIcon">
+            <i class="fas fa-comments"></i>
+            <span class="chat-pulse"></span>
+        </div>
+        <div class="chat-card" id="chatCard">
+            <div class="chat-card-header">
+                <div>
+                    <i class="fas fa-comment-dots"></i>
+                    <span>Quick Question?</span>
+                </div>
+                <button class="chat-close" id="chatClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-card-body">
+                <p>Send us a quick message and we'll text you back within the hour!</p>
+                <form id="quickMessageForm" class="quick-message-form">
+                    <input type="tel" id="quickPhone" name="phone" placeholder="Your Phone Number*" required>
+                    <textarea id="quickMessage" name="message" placeholder="Your question..." rows="3" required></textarea>
+                    <button type="submit" class="quick-send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    {% block extra_scripts %}{% endblock %}
+</body>
+</html>

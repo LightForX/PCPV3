@@ -1,0 +1,381 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section - Lead Magnet Focused -->
+<section class="hero-lead">
+    <div class="hero-content-lead">
+        <h1><span class="brand-name">Pool Care Premier</span></h1>
+        <h2 class="hero-headline">Lithia, Bloomingdale & Riverview's Pool Experts</h2>
+        <p class="hero-subtitle">Crystal clear water. Every week. Guaranteed. Serving Hillsborough County.</p>
+        
+        <div class="hero-benefits">
+            <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>100% Satisfaction Guaranteed</span>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>No Credit Card Required</span>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Cancel Anytime</span>
+            </div>
+        </div>
+        
+        <a href="#contact-form" class="cta-primary-mega">
+            Get My Free Equipment Check
+            <i class="fas fa-arrow-right"></i>
+        </a>
+        
+        <p class="trust-line">
+            <i class="fas fa-users" aria-hidden="true"></i> Join 100+ happy pool owners in Lithia, Bloomingdale & Riverview
+        </p>
+        
+        <!-- Before & After Slideshow - In Hero Section -->
+        <div class="hero-slideshow-wrapper">
+            <div class="slideshow-container" id="slideshowContainer">
+                <!-- Slide 1 -->
+                <div class="slide active">
+                    <div class="before-after-comparison">
+                        <div class="image-pair">
+                            <div class="image-wrapper">
+                                <div class="image-label">Before</div>
+                                <img src="{{ url_for('static', filename='imgs/before1.png') }}" alt="Pool before cleaning" class="comparison-image">
+                            </div>
+                            <div class="image-wrapper">
+                                <div class="image-label after-label">After</div>
+                                <img src="{{ url_for('static', filename='imgs/after1.png') }}" alt="Pool after cleaning" class="comparison-image">
+                            </div>
+                        </div>
+                        <div class="slide-description">
+                            <h3>Complete Pool Transformation</h3>
+                            <p>These pictures don't exist anywhere else the best work around is done right here at pool care premier.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <div class="before-after-comparison">
+                        <div class="image-pair">
+                            <div class="image-wrapper">
+                                <div class="image-label">Before</div>
+                                <img src="{{ url_for('static', filename='imgs/before2.jpg') }}" alt="Pool before cleaning" class="comparison-image">
+                            </div>
+                            <div class="image-wrapper">
+                                <div class="image-label after-label">After</div>
+                                <img src="{{ url_for('static', filename='imgs/after2.jpg') }}" alt="Pool after cleaning" class="comparison-image">
+                            </div>
+                        </div>
+                        <div class="slide-description">
+                            <h3>Deep Clean & Chemical Balance</h3>
+                            <p>Professional cleaning and chemical adjustment restored this pool to perfect condition.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <div class="before-after-comparison">
+                        <div class="image-pair">
+                            <div class="image-wrapper">
+                                <div class="image-label">Before</div>
+                                <img src="static\imgs\before3.jpg" alt="Pool before cleaning" class="comparison-image">
+                            </div>
+                            <div class="image-wrapper">
+                                <div class="image-label after-label">After</div>
+                                <img src="static\imgs\after3.jpg" alt="Pool after cleaning" class="comparison-image">
+                            </div>
+                        </div>
+                        <div class="slide-description">
+                            <h3>Weekly Maintenance Excellence</h3>
+                            <p>Consistent weekly service keeps this pool looking perfect all season long.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <button class="slideshow-nav prev" id="prevSlide" aria-label="Previous slide">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slideshow-nav next" id="nextSlide" aria-label="Next slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Slide Indicators -->
+            <div class="slide-indicators" id="slideIndicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Overview -->
+<section id="services" class="services-overview" itemscope itemtype="https://schema.org/Service">
+    <h2>Professional Pool Service - What's Included</h2>
+    <div class="services-list">
+        <div class="service-item" itemscope itemtype="https://schema.org/Service">
+            <i class="fas fa-broom" aria-hidden="true"></i>
+            <div>
+                <h4 itemprop="name">Pool Cleaning</h4>
+                <p itemprop="description">Skimming, vacuuming, brushing walls and steps</p>
+            </div>
+        </div>
+        <div class="service-item" itemscope itemtype="https://schema.org/Service">
+            <i class="fas fa-vial" aria-hidden="true"></i>
+            <div>
+                <h4 itemprop="name">Chemical Balancing</h4>
+                <p itemprop="description">pH, chlorine, alkalinity testing and adjustment</p>
+            </div>
+        </div>
+        <div class="service-item" itemscope itemtype="https://schema.org/Service">
+            <i class="fas fa-filter" aria-hidden="true"></i>
+            <div>
+                <h4 itemprop="name">Filter Maintenance</h4>
+                <p itemprop="description">Filter cleaning and backwashing</p>
+            </div>
+        </div>
+        <div class="service-item" itemscope itemtype="https://schema.org/Service">
+            <i class="fas fa-tools" aria-hidden="true"></i>
+            <div>
+                <h4 itemprop="name">Equipment Check</h4>
+                <p itemprop="description">Pump, heater, and equipment inspection</p>
+            </div>
+        </div>
+        <div class="service-item" itemscope itemtype="https://schema.org/Service">
+            <i class="fas fa-leaf" aria-hidden="true"></i>
+            <div>
+                <h4 itemprop="name">Debris Removal</h4>
+                <p itemprop="description">Leaves, dirt, and debris clearing</p>
+            </div>
+        </div>
+        <div class="service-item" itemscope itemtype="https://schema.org/Service">
+            <i class="fas fa-clipboard-check" aria-hidden="true"></i>
+            <div>
+                <h4 itemprop="name">Service Reports</h4>
+                <p itemprop="description">Detailed reports after each visit</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Social Proof Section -->
+<section class="social-proof">
+    <h2>From Our Happy Customers</h2>
+    <div class="testimonials-grid">
+        <div class="testimonial">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>"Best pool service we've had! They're reliable, thorough, and reasonably priced. Our pool has never looked better."</p>
+            <div class="author">
+                <strong>Sarah M.</strong>
+                <span>Tampa, FL</span>
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>"Professional service at a great price. They caught a filter issue before it became expensive. Highly recommend!"</p>
+            <div class="author">
+                <strong>Mike R.</strong>
+                <span>Clearwater, FL</span>
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>"The free trial convinced us immediately. They're always on time and our water chemistry is always perfect."</p>
+            <div class="author">
+                <strong>Jennifer L.</strong>
+                <span>St. Petersburg, FL</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Simplified Contact Form - Maximum Conversions -->
+<section id="contact-form" class="contact-form-section">
+    <div class="form-container-optimized">
+        <div class="form-header-optimized">
+            <div class="form-offer-badge">
+                <span class="badge-value">🎁 Free Equipment Check</span>
+            </div>
+            <h2>Get Your Free Equipment Check</h2>
+            <p class="form-subtitle">For pool owners in Lithia, Bloomingdale & Riverview. Fill out the form and we'll call you within 24 hours to schedule.</p>
+            
+            <div class="guarantee-badges">
+                <div class="guarantee-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>100% Satisfaction Guarantee</span>
+                </div>
+                <div class="guarantee-item">
+                    <i class="fas fa-ban"></i>
+                    <span>No Credit Card Required</span>
+                </div>
+                <div class="guarantee-item">
+                    <i class="fas fa-handshake"></i>
+                    <span>No Obligation</span>
+                </div>
+            </div>
+        </div>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}" id="success-message">
+                        <i class="fas fa-check-circle"></i>
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <form action="{{ url_for('contact') }}" method="POST" class="lead-form-optimized" aria-label="Free equipment check request form">
+            <div class="form-grid-qualified">
+                <div class="form-field-simple">
+                    <label for="name" class="sr-only">Full Name</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Your Name*" 
+                        required 
+                        minlength="2"
+                        autocomplete="name"
+                        aria-required="true">
+                </div>
+
+                <div class="form-field-simple">
+                    <label for="phone" class="sr-only">Phone Number</label>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="Phone Number*" 
+                        required 
+                        pattern="[\(\d{3}\)\ \d{3}-\d{4}|\d{10}]"
+                        autocomplete="tel"
+                        aria-required="true">
+                </div>
+
+                <div class="form-field-simple">
+                    <label for="email" class="sr-only">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Email Address*" 
+                        required 
+                        autocomplete="email"
+                        aria-required="true">
+                </div>
+
+                <div class="form-field-simple">
+                    <label for="address" class="sr-only">Street Address</label>
+                    <input 
+                        type="text" 
+                        id="address" 
+                        name="address" 
+                        placeholder="Street Address*" 
+                        required 
+                        minlength="5"
+                        autocomplete="street-address"
+                        aria-required="true">
+                </div>
+
+                <div class="form-field-simple">
+                    <label for="pool_type" class="sr-only">Pool Type</label>
+                    <select 
+                        id="pool_type" 
+                        name="pool_type" 
+                        required 
+                        aria-required="true">
+                        <option value="">Pool Type*</option>
+                        <option value="in-ground">In-Ground Pool</option>
+                        <option value="above-ground">Above-Ground Pool</option>
+                        <option value="not-sure">Not Sure</option>
+                    </select>
+                </div>
+
+                <div class="form-field-simple">
+                    <label for="current_service" class="sr-only">Current Service Status</label>
+                    <select 
+                        id="current_service" 
+                        name="current_service" 
+                        required 
+                        aria-required="true">
+                        <option value="">Current pool service?*</option>
+                        <option value="yes-switching">Yes, looking to switch</option>
+                        <option value="no-ready">No, ready to start service</option>
+                        <option value="no-shopping">No, just shopping around</option>
+                    </select>
+                </div>
+
+                <div class="form-field-simple full-width">
+                    <label for="start_timeframe" class="sr-only">When to Start</label>
+                    <select 
+                        id="start_timeframe" 
+                        name="start_timeframe" 
+                        required 
+                        aria-required="true">
+                        <option value="">When would you like to start?*</option>
+                        <option value="this-week">This week</option>
+                        <option value="next-week">Next week</option>
+                        <option value="within-month">Within a month</option>
+                        <option value="just-looking">Just getting quotes</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-button-mega" aria-label="Submit form to get free equipment check">
+                <span class="button-text">Schedule My Free Equipment Check</span>
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </button>
+
+            <p class="form-footer-trust">
+                <i class="fas fa-lock" aria-hidden="true"></i> Your information is secure. We'll call within 24 hours.
+            </p>
+        </form>
+        
+        <div class="social-proof-mini">
+            <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p><strong>4.9/5</strong> from 200+ verified customers</p>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="final-cta">
+    <h2>Ready for a Sparkling Clean Pool?</h2>
+    <p>Get your free equipment check today. No credit card required.</p>
+    <a href="#contact-form" class="cta-primary-large">
+        Get My Free Equipment Check
+        <i class="fas fa-arrow-right"></i>
+    </a>
+</section>
+{% endblock %}

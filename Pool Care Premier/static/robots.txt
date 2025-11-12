@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.poolcarepremier.com/sitemap.xml
+
+# Block access to admin/backend if any
+Disallow: /admin/
+Disallow: /api/
+
+# Crawl-delay
+Crawl-delay: 1
+
